@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
     h.vm.network "private_network", ip: "192.168.135.10"
     h.vm.hostname = 'control'
     h.vm.synced_folder "/home/jakeline/git/AnsibleAutomation/ansible", "/home/vagrant/ansible"
-    h.vm.provision :shell, :inline => <<'EOF'
+    h.vm.provision :shell, :inline => <<'EOF' 
 if [ ! -f "/home/vagrant/.ssh/id_rsa" ]; then
   ssh-keygen -t rsa -N "" -f /home/vagrant/.ssh/id_rsa
 fi
