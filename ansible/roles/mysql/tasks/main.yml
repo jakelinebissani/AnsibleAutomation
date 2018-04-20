@@ -35,5 +35,5 @@
   mysql_user: 
    name: demo 
    password: demo 
-   priv: "demo.*:ALL host='%'" 
+   priv: '*.*:ALL'
    state: present
