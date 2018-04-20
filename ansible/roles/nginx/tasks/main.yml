@@ -36,4 +36,5 @@
 - name: ensure nginx started
   service: 
    name: nginx 
-   state: started enabled=yes
+   state: started 
+   enabled: yes
