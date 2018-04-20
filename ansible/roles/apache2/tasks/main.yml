@@ -16,8 +16,8 @@
 
 - name: de-activate default apache site
   file: 
-   path: /etc/apache2/sites-enabled/000-default.conf 
-  state: absent
+   path: /etc/apache2/sites-enabled/demo.conf 
+   state: absent
   notify: restart apache2
 
 - name: ensure apache2 started
